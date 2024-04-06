@@ -6,8 +6,8 @@ def Homepage():  # put application's code here
 @app.route("/contatos")
 def contatos():
     return render_template("contatos.html")
-@app.route("/usuarios/<Ramon>")
-def usuarios(Ramon):
-    return render_template("usuarios.html",nome_usuario=Ramon)
+@app.route("/usuarios/<usuario>")
+def usuarios(usuario):
+    return render_template ("usuarios.html", usuario=usuario)
 if __name__ == '__main__':
     app.run(debug=True)
